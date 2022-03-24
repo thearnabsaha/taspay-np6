@@ -17,6 +17,8 @@ $main-text-color: #333333;
 //?################################### Navbar Styling #################################################
 #navbar{
     background-color: $bgcolor;
+    position:fixed;
+    width: 100%;
     .container{
         display: flex;
         margin: auto;
@@ -43,4 +45,7 @@ $main-text-color: #333333;
             }
         }
     }
+}
+#home{
+    padding-top: 8rem;
 }
