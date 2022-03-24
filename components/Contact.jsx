@@ -1,8 +1,8 @@
 const Contact = () => {
     return (
-        <div>
-            Enter
-        </div>
+        <>
+            Contact
+        </>
     );
 }
 
