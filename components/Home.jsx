@@ -1,3 +1,5 @@
+import mh from '../public/images/mainHero.png'
+import Image from 'next/image';
 const Home = () => {
     return (
         <div>
@@ -9,12 +11,12 @@ const Home = () => {
                         <h3>Get early access for you</h3>
                         <form>
                             <input type="text" placeholder="Enter Your Email"/>
-                            <button type="submit"></button>
+                            <button type="submit">Submit</button>
                         </form>
                     </div>
                 </div>
                 <div className="right">
-
+                    <Image src={mh} width="800" height="800" objectFit='cover' alt='arnabs image'/>
                 </div>
             </div>
         </div>
