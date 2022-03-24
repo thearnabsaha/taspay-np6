@@ -8,5 +8,33 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-family: 'Roboto', sans-serif;
-    color: #fff;
+}
+//?################################### Navbar Styling #################################################
+#navbar{
+    background-color: #f1f5fd;
+    .container{
+        display: flex;
+        margin: auto;
+        width: 75vw;
+        padding-top: 1.5rem;
+        justify-content: space-between;
+        .left{
+            h1{
+                font-size: 3.5rem;
+            }
+        }
+        .right{
+            list-style: none;
+            li{
+                margin-top: 1rem;
+                display: inline-block;
+                a{
+                    font-size: 2rem;
+                    text-decoration: none;
+                    padding-right: 4rem;
+                    color: #555;
+                }
+            }
+        }
+    }
 }
