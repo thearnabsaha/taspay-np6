@@ -1,3 +1,8 @@
+//?################################### Variables #################################################
+$bgcolor: #f1f5fd;
+$primary-color: #6f5de7;
+$text-color: #828286;
+$main-text-color: #333333;
 //?################################### CSS RESET #################################################
 *,*::after,*::before{
     margin: 0;
@@ -11,12 +16,13 @@
 }
 //?################################### Navbar Styling #################################################
 #navbar{
-    background-color: #f1f5fd;
+    background-color: $bgcolor;
     .container{
         display: flex;
         margin: auto;
         width: 75vw;
         padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
         justify-content: space-between;
         .left{
             h1{
@@ -32,7 +38,7 @@
                     font-size: 2rem;
                     text-decoration: none;
                     padding-right: 4rem;
-                    color: #555;
+                    color: $text-color;
                 }
             }
         }
