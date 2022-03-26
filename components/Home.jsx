@@ -1,14 +1,11 @@
 import mh from '../public/images/mainHero.png'
 import Image from 'next/image';
 import emailjs from '@emailjs/browser';
-
+import { useRef, useState } from 'react';
 const Home = () => {
     const form = useRef();
-
     const sendEmail = (e) => {
-    e.preventDefault();
-
-    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_USER_ID')
+    emailjs.sendForm('service_qrac7ua', 'template_r6sex1o', form.current, 'user_SvxI195VxTx62CejHs17q')
     .then((result) => {
         console.log(result.text);
     }, (error) => {
@@ -23,8 +20,8 @@ const Home = () => {
                         <h1>Online Payment Made Easy For You</h1>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et, quia quis? Ipsa officia ad deserunt voluptate quam, nisi odio officiis tempora recusandae voluptate quam, nisi odio officiis tempora recusandae</p>
                         <h3>Get early access for you</h3>
-                        <form>
-                            <input type="email" placeholder="Enter Your Email"/>
+                        <form ref={form} onSubmit={sendEmail}>
+                            <input type="email" placeholder="Enter Your Email" name="user_email"/>
                             <button type="submit">Submit</button>
                         </form>
                     </div>
