@@ -10,7 +10,7 @@ const Home = () => {
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et, quia quis? Ipsa officia ad deserunt voluptate quam, nisi odio officiis tempora recusandae voluptate quam, nisi odio officiis tempora recusandae</p>
                         <h3>Get early access for you</h3>
                         <form>
-                            <input type="text" placeholder="Enter Your Email"/>
+                            <input type="email" placeholder="Enter Your Email"/>
                             <button type="submit">Submit</button>
                         </form>
                     </div>

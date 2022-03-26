@@ -59,6 +59,7 @@ $main-text-color: #333333;
     align-items: center;
     justify-content: space-around;
     height: 100vh;
+    background-color: $bgcolor;
     .container{
         .left{
             h1{
@@ -77,6 +78,28 @@ $main-text-color: #333333;
                 font-weight: 400;
                 color: $main-text-color;
                 margin-top: 4rem;
+            }
+            form{
+                input{
+                    width: 400px;
+                    margin-top: 1.5rem;
+                    height: 50px;
+                    font-size: 1.5rem;
+                    padding-left: 1rem;
+                }
+                button{
+                    width: 100px;
+                    height: 40px;
+                    font-size: 1.5rem;
+                    transform: translateX(-105px);
+                    background-color: $primary-color;
+                    color: #fff;
+                    border: none;
+                    outline: none;
+                    &:active{
+                        background-color: hsl(248, 94%, 64%);
+                    }
+                }
             }
         }
         .right{
