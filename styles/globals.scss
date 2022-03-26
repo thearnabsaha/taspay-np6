@@ -19,6 +19,7 @@ $main-text-color: #333333;
     background-color: $bgcolor;
     position:fixed;
     width: 100%;
+    z-index: 99;
     .container{
         display: flex;
         margin: auto;
@@ -51,7 +52,7 @@ $main-text-color: #333333;
         }
     }
 }
+//?################################### Home Styling #################################################
 #home{
     padding-top: 8rem;
 }
-//?################################### Home Styling #################################################
