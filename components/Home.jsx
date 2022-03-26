@@ -1,7 +1,7 @@
 import mh from '../public/images/mainHero.png'
 import Image from 'next/image';
 import emailjs from '@emailjs/browser';
-import { useRef, useState } from 'react';
+import { useRef} from 'react';
 const Home = () => {
     const form = useRef();
     const sendEmail = (e) => {
