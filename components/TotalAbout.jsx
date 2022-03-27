@@ -5,7 +5,7 @@ const TotalAbout = () => {
     return (
         <>
             <About title="How to use the App?" uptitle="-- AVAILABLE @ GOOGLE AND IOS APP STORE ONLY" img={hero3}/>
-            <About title="World class support is available 24/7" uptitle="-- SUPPORT IN ANY LANGUAGES" img={callcenter}/>
+            <About title="World class support is available 24/7" uptitle="-- SUPPORT IN ANY LANGUAGES" img={callcenter} style={{backgroundColor: "lightblue"}}/>
         </>
     );
 }
