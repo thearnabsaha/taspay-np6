@@ -10,7 +10,13 @@ const About = () => {
                         </div>
                         <div className="left">
                             <h1>How to use the App?</h1>
-                            
+                            <div className="contentContainer">
+                                <div className="content">
+                                    <h3>1</h3>
+                                    <h2>sign in</h2>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Etquia quis?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Etquia quis?Lorem ipsum, Etquia quis?Lorem ipsum, Etquia quis?</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
