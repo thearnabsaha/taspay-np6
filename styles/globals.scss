@@ -13,7 +13,6 @@ $main-text-color: #333333;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-family: 'Roboto', sans-serif;
-    color: $main-text-color;
 }
 //?################################### Navbar Styling #################################################
 #navbar{
@@ -61,6 +60,7 @@ $main-text-color: #333333;
     justify-content: space-around;
     height: 110vh;
     background-color: $bgcolor;
+    color: $main-text-color;
     .container{
         .left{
             h1{
@@ -87,6 +87,7 @@ $main-text-color: #333333;
                     height: 50px;
                     font-size: 1.5rem;
                     padding-left: 1rem;
+                    border: 1px solid #33333328;
                 }
                 button{
                     width: 100px;
@@ -107,6 +108,7 @@ $main-text-color: #333333;
 }
 //?################################### Works Styling #################################################
 #work{
+    color: $main-text-color;
     .container{
         transform: translateY(-60px);
         width: 75vw;
@@ -170,6 +172,9 @@ $main-text-color: #333333;
 }
 //?################################### About Styling #################################################
 #about{
+    color: $main-text-color;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
     .container{
         width: 60vw;
         margin: auto;

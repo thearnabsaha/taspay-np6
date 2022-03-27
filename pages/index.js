@@ -16,6 +16,7 @@ const index = () => {
       <Home/>
       <Works/>
       <About/>
+      <About/>
       <Services/>
       <Contact/>
       <Footer/>
