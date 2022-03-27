@@ -168,3 +168,28 @@ $main-text-color: #333333;
     }
 }
 //?################################### About Styling #################################################
+#about{
+    .container{
+        width: 60vw;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        .right{
+            .img{
+                border-radius: 5rem;
+            }
+        }
+        .left{
+            h4{
+                font-size: 1.5rem;
+            }
+            h1{
+                font-size: 3rem;
+                margin-top: 4rem;
+            }
+            .contentContainer{
+                
+            }
+        }
+    }
+}
