@@ -4,7 +4,7 @@ const Works = () => {
         <>
             <div id="work">
                 <div className="container">
-                    <h1>Download</h1>
+                    <h1>How does it Work</h1>
                     <div className="contentContainer">
                         <div className="content">
                             <div className="icons"><MdDownload className="icon"/></div>
