@@ -183,6 +183,7 @@ $main-text-color: #333333;
             padding-left: 7rem;
             h4{
                 font-size: 1.5rem;
+                color: $text-color;
             }
             h1{
                 font-size: 3rem;
@@ -192,7 +193,10 @@ $main-text-color: #333333;
                 margin-top: 4rem;
                 .content{
                     display: flex;
+                    padding-bottom: 4rem;
                     h3{
+                        margin-top: 1.5rem;
+                        margin-right: 2rem;
                         font-size: 2.5rem;
                         font-weight: 400;
                         color: $primary-color;
@@ -200,14 +204,16 @@ $main-text-color: #333333;
                         border-radius: 50%;
                         width: 40px;
                         height: 40px;
-                        padding-left: 1rem;
+                        padding-left: 1.2rem;
+                        padding-top: .2rem;
                     }
                     .desc{
                         h2{
                             font-size: 1.8rem;
+                            padding-bottom: 1rem;
                         }
                         p{
-                            font-size: 1rem;
+                            font-size: 1.3rem;
                             width: 30vw;
                         }
                     }
