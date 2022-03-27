@@ -13,7 +13,7 @@ const Home = () => {
     });
 };
     return (
-        <div>
+        <>
             <div id="home">
                 <div className="container">
                     <div className="left">
@@ -30,7 +30,7 @@ const Home = () => {
                     <Image src={mh} width="500" height="500" objectFit='cover' alt='arnabs image'/>
                 </div>
             </div>
-        </div>
+        </>
     );
 }
 
