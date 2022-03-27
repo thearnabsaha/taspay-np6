@@ -1,4 +1,4 @@
-import { MdDownload } from "react-icons/md";
+import { MdDownload , MdAttachMoney, MdOutlineScreenShare} from "react-icons/md";
 import { useState } from "react";
 import { works } from "../api/works";
 
