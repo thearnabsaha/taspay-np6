@@ -105,3 +105,20 @@ $main-text-color: #333333;
     }
 }
 //?################################### Works Styling #################################################
+#work{
+    .container{
+        transform: translateY(-30px);
+        width: 50vw;
+        margin: auto;
+        box-shadow: 0px 0px 20px 0px rgba(170, 170, 170, 0.452);
+        h1{
+            font-size: 4rem;
+        }
+        .contentContainer{
+            display: flex;
+            .content{
+                
+            }
+        }
+    }
+}
