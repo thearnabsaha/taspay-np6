@@ -13,10 +13,10 @@ const Works = () => {
                     <div className="contentContainer">
                     {workData.map((e)=>{
                         return <>
-                            <div className="content">
+                            <div className="content" key={e.id}>
                                 <div className="icons"><MdDownload className="icon"/></div>
-                                <h2>Download App</h2>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Etquia quis?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Etquia quis?</p>
+                                <h2>{e.title}</h2>
+                                <p>{e.desc}</p>
                             </div>
                         </>
                     })}
