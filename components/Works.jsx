@@ -11,6 +11,16 @@ const Works = () => {
                             <h2>Downlaod App</h2>
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Etquia quis?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Etquia quis?</p>
                         </div>
+                        <div className="content">
+                            <div className="icons"><MdDownload className="icon"/></div>
+                            <h2>Downlaod App</h2>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Etquia quis?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Etquia quis?</p>
+                        </div>
+                        <div className="content">
+                            <div className="icons"><MdDownload className="icon"/></div>
+                            <h2>Downlaod App</h2>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Etquia quis?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Etquia quis?</p>
+                        </div>
                     </div>
                 </div>
             </div>
