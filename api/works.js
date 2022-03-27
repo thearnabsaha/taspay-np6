@@ -1,5 +1,3 @@
-import { MdDownload , MdAttachMoney, MdOutlineScreenShare} from "react-icons/md";
-
 export const works = [
     {
         id: 1,
