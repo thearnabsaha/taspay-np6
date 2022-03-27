@@ -1,4 +1,4 @@
-import About from "../components/About";
+import TotalAbout from "../components/TotalAbout";
 import Contact from "../components/Contact";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
@@ -15,8 +15,7 @@ const index = () => {
       <Navbar/>
       <Home/>
       <Works/>
-      <About/>
-      <About/>
+      <TotalAbout/>
       <Services/>
       <Contact/>
       <Footer/>
