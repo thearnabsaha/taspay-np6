@@ -107,17 +107,47 @@ $main-text-color: #333333;
 //?################################### Works Styling #################################################
 #work{
     .container{
-        transform: translateY(-30px);
-        width: 50vw;
+        transform: translateY(-60px);
+        width: 70vw;
         margin: auto;
         box-shadow: 0px 0px 20px 0px rgba(170, 170, 170, 0.452);
+        background-color: #fff;
         h1{
-            font-size: 4rem;
+            font-size: 3rem;
+            text-align: center;
+            padding-top: 3rem;
+            padding-bottom: 2rem;
         }
         .contentContainer{
             display: flex;
+            justify-content: space-around;
+            padding: 5rem;
+            padding-bottom: 2rem;
             .content{
-                
+                display: flex;
+                flex-direction: column;
+                justify-content: center ;
+                margin-left: 2rem;
+                box-shadow: 0px 0px 5px 0px rgba(170, 170, 170, 0.452);
+                .icons{
+                    padding-top: 3rem;
+                    text-align: center;
+                    padding-bottom: 2rem;
+                    .icon{
+                        font-size: 3rem;
+                    }
+                }
+                h2{
+                    font-size: 2rem;
+                    text-align: center;
+                    font-weight: 400;
+                }
+                p{
+                    font-size: 1.7rem;
+                    color: $text-color;
+                    padding: 2rem .4rem;
+                    text-align: center;
+                }
             }
         }
     }
