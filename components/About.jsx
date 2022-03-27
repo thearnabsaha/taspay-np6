@@ -1,8 +1,8 @@
-import { useState } from "react";
-import { send } from "../api/send";
+// import { useState } from "react";
+// import { send } from "../api/send";
 import Image from 'next/image';
 const About = (props) => {
-    const [sendData, setSendData] = useState(send)
+    // const [sendData, setSendData] = useState(send)
     return (
         <>
             <div id="about">
@@ -16,7 +16,7 @@ const About = (props) => {
                             <h1>{props.title}</h1>
                             <div className="contentContainer">
                                 {
-                                    sendData.map((e)=>{
+                                    props.data.map((e)=>{
                                         return <>
                                                 <div className="content" key={e.id}>
                                                     <h3>{e.id}</h3>
