@@ -20,7 +20,6 @@ const Works = () => {
                             </div>
                         </>
                     })}
-                        
                         {/* <div className="content">
                             <div className="icons"><MdDownload className="icon"/></div>
                             <h2>Download App</h2>
