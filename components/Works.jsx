@@ -14,7 +14,7 @@ const Works = () => {
                     {workData.map((e)=>{
                         return <>
                             <div className="content" key={e.id}>
-                                <div className="icons"><{e.icon} className="icon"/></div>
+                                <div className="icons"><MdAttachMoney className="icon"/></div>
                                 <h2>{e.title}</h2>
                                 <p>{e.desc}</p>
                             </div>
