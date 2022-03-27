@@ -4,7 +4,6 @@ import { works } from "../api/works";
 
 const Works = () => {
     const [workData, setWorkData] = useState(works)
-    console.log(workData);
     return (
         <>
             <div id="work">
