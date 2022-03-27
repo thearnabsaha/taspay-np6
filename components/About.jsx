@@ -29,6 +29,7 @@ const About = () => {
                                         </>
                                     })
                                 }
+                                <h5>Learn More</h5>
                             </div>
                         </div>
                     </div>

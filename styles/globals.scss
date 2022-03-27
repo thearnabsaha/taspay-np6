@@ -189,6 +189,19 @@ $main-text-color: #333333;
                 font-size: 3rem;
                 margin-top: 4rem;
             }
+            h5{
+                display: inline-block;
+                padding: 1rem;
+                border-radius: 4rem;
+                font-size: 2rem;
+                font-weight: 400;
+                color: $primary-color;
+                border: 2px solid $primary-color;
+                &:hover{
+                    color: #fff;
+                    background-color: $primary-color;
+                }
+            }
             .contentContainer{
                 margin-top: 4rem;
                 .content{
