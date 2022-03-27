@@ -17,9 +17,11 @@ const About = () => {
                                 {
                                     sendData.map((e)=>{
                                         return <>
-                                            <h3>1</h3>
-                                            <h2>sign in</h2>
-                                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Etquia quis?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Etquia quis?Lorem ipsum, Etquia quis?Lorem ipsum, Etquia quis?</p>
+                                                <div className="content" key={e.id}>
+                                                    <h3>{e.id}</h3>
+                                                    <h2>{e.title}</h2>
+                                                    <p>{e.desc}</p>
+                                                </div>
                                         </>
                                     })
                                 }
