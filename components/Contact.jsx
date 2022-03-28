@@ -17,6 +17,12 @@ const Contact = () => {
                                     <input type="text" placeholder='First Name'/>
                                     <input type="text" placeholder='Last Name'/>
                                 </div>
+                                <div className="con">
+                                    <input type="tel" name="" id="" placeholder='Phone Number'/>
+                                    <input type="email" name="" id="" placeholder='Email ID'/>
+                                </div>
+                                <input type="text" placeholder='Add Address'/>
+                                <input type="text" placeholder='Enter the message'/>
                             </form>
                         </div>
                     </div>
