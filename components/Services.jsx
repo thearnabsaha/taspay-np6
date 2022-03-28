@@ -7,12 +7,12 @@ const Services = () => {
                 <div className="container">
                     {
                         services.map((e)=>{
-                            return <>
-                                <div className="content" key={e.id}>
-                                    <h1>{e.title}</h1>
+                            return <div key={e.id}>
+                                <div className="content" >
+                                    <h2>{e.title}</h2>
                                     <p>{e.desc}</p>
                                 </div>
-                            </>
+                            </div>
                         })
                     }
                 </div>

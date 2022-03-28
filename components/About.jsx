@@ -18,15 +18,15 @@ const About = (props) => {
                             <div className="contentContainer">
                                 {
                                     props.data.map((e)=>{
-                                        return <>
-                                                <div className="content" key={e.id}>
+                                        return <div key={e.id}>
+                                                <div className="content">
                                                     <h3>{e.id}</h3>
                                                     <div className="desc">
                                                         <h2>{e.title}</h2>
                                                         <p>{e.desc}</p>
                                                     </div>
                                                 </div>
-                                        </>
+                                        </div>
                                     })
                                 }
                                 <h5>Learn More</h5>

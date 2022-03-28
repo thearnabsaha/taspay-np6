@@ -11,13 +11,13 @@ const Works = () => {
                     <h1>How does it Work</h1>
                     <div className="contentContainer">
                     {workData.map((e)=>{
-                        return <>
-                            <div className="content" key={e.id}>
-                                <div className="icons"><MdApi className="icon"/></div>
-                                <h2>{e.title}</h2>
-                                <p>{e.desc}</p>
-                            </div>
-                        </>
+                        return <div key={e.id}>
+                                    <div className="content">
+                                        <div className="icons"><MdApi className="icon"/></div>
+                                        <h2>{e.title}</h2>
+                                        <p>{e.desc}</p>
+                                    </div>
+                                </div>
                     })}
                     </div>
                 </div>
