@@ -1,3 +1,4 @@
+import {MdApi} from "react-icons/md";
 import { services } from "../api/services";
 const Services = () => {
     return (
@@ -9,6 +10,7 @@ const Services = () => {
                         services.map((e)=>{
                             return <div key={e.id}>
                                 <div className="content" >
+                                    <div className="icons"><MdApi className="icon"/></div>
                                     <h2>{e.title}</h2>
                                     <p>{e.desc}</p>
                                 </div>
