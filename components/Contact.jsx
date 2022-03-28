@@ -4,11 +4,11 @@ const Contact = () => {
     return (
         <>
             <div id="contact">
-                <div id="container">
+                <div className="container">
                     <div className="left">
                         <h1>Connect With Our Sales Team.</h1>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt eaque alias similique.</p>
-                        <Image src={mh} width="500" height="500" objectFit='cover' alt='arnabs image'/>
+                        <Image src={mh} width="400" height="400" objectFit='cover' alt='arnabs image'/>
                     </div>
                     <div className="right">
                         <div className="form">

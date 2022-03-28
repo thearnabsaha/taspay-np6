@@ -290,6 +290,32 @@ $main-text-color: #333333;
         }
     }
 }
+//?################################### Contact Styling #################################################
+#contact{
+    color: $main-text-color;
+    .container{
+        padding-top: 5rem;
+        display: flex;
+        width: 80vw;
+        margin: auto;
+        padding-bottom: 5rem;
+        .left{
+            h1{
+                font-size: 2.5rem;
+                padding-bottom: 2rem;
+            }
+            p{
+                width: 50rem;
+                padding-bottom: 3rem;
+                color: $text-color;
+                font-size: 1.8rem;
+            }
+        }
+        .right{
+            
+        }
+    }
+}
 //?################################### Footer Styling #################################################
 #footer{
     background-color: rgb(27, 35, 51);
