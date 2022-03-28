@@ -24,8 +24,8 @@ const Contact = () => {
                                 <input type="text" placeholder='Add Address'/>
                                 <input type="text" placeholder='Enter the message'/>
                                 <div className="check">
-                                    <input type="checkbox" name="check" id="" />
-                                    <label htmlFor="check">I agree that the thapatechnicalpay may contact me at the email address or phone number above</label>
+                                    <input type="checkbox" name="check" className='ck' />
+                                    <label htmlFor="check" className='label'>I agree that the TasPay may contact me at the email address or phone number above</label>
                                 </div>
                                 <button type='submit'>Submit</button>
                             </form>
