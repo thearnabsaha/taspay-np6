@@ -11,7 +11,14 @@ const Contact = () => {
                         <Image src={mh} width="500" height="500" objectFit='cover' alt='arnabs image'/>
                     </div>
                     <div className="right">
-                        
+                        <div className="form">
+                            <form action="POST">
+                                <div className="name">
+                                    <input type="text" placeholder='First Name'/>
+                                    <input type="text" placeholder='Last Name'/>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
