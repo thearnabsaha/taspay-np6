@@ -176,7 +176,7 @@ $main-text-color: #333333;
     padding-top: 5rem;
     padding-bottom: 5rem;
     .container{
-        width: 60vw;
+        width: 65vw;
         margin: auto;
         display: flex;
         .right{
@@ -185,7 +185,7 @@ $main-text-color: #333333;
             }
         }
         .left{
-            padding-left: 7rem;
+            padding:0rem 7rem;
             h4{
                 font-size: 1.5rem;
                 color: $text-color;

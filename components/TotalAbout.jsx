@@ -13,11 +13,10 @@ const TotalAbout = () => {
     return (
         <>
             <About title="How to use the App?" uptitle="-- AVAILABLE @ GOOGLE AND IOS APP STORE ONLY" img={hero3} data={send}/>
-            <About title="World class support is available 24/7" uptitle="-- SUPPORT IN ANY LANGUAGES" img={callcenter} data={recieve}/>
+            <About title="World class support is available 24/7" uptitle="-- SUPPORT IN ANY LANGUAGES" img={callcenter} data={recieve} variant="reverse"/>
         </>
     );
 }
 
 export default TotalAbout;
 
-// #about{.container{flex-direction: row-reverse;}}

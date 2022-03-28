@@ -1,13 +1,14 @@
-// import { useState } from "react";
-// import { send } from "../api/send";
 import Image from 'next/image';
+import styled from 'styled-components';
+const AboutContainer = styled.div`
+  flex-direction:${(props)=>(props.variant==="reverse"?"row":"row-reverse")};
+`;
 const About = (props) => {
-    // const [sendData, setSendData] = useState(send)
     return (
         <>
             <div id="about">
                 <div>
-                    <div className="container">
+                    <AboutContainer className="container" variant={props.variant}>
                         <div className="right">
                             <Image src={props.img} width="300" height="500" objectFit='cover' alt='arnabs image' className="img"/>
                         </div>
@@ -31,7 +32,7 @@ const About = (props) => {
                                 <h5>Learn More</h5>
                             </div>
                         </div>
-                    </div>
+                    </AboutContainer>
                 </div>
             </div>
         </>
