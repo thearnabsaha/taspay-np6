@@ -1,4 +1,4 @@
-import mh from '../public/images/mainHero.png'
+import mh from '../public/images/hero1.jpg'
 import Image from 'next/image';
 const Contact = () => {
     return (
@@ -6,12 +6,12 @@ const Contact = () => {
             <div id="contact">
                 <div id="container">
                     <div className="left">
-                        <h1></h1>
-                        <p></p>
+                        <h1>Connect With Our Sales Team.</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt eaque alias similique.</p>
                         <Image src={mh} width="500" height="500" objectFit='cover' alt='arnabs image'/>
                     </div>
                     <div className="right">
-
+                        
                     </div>
                 </div>
             </div>
