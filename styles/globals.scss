@@ -290,3 +290,29 @@ $main-text-color: #333333;
         }
     }
 }
+//?################################### Footer Styling #################################################
+#footer{
+    background-color: rgb(27, 35, 51);
+    .container{
+        color: #fff;
+        width: 90vw;
+        margin: auto;
+        h1{
+            font-size: 2.5rem;
+            text-align: center;
+            padding: 3rem;
+        }
+        h2{
+            font-size: 3rem;
+            display: inline-block;
+            padding-bottom: 2rem;
+        }
+        p{
+            border-top: 1px solid $text-color;
+            color: $text-color;
+            font-size: 2rem;
+            text-align: center;
+            padding: 1rem;
+        }
+    }
+}
