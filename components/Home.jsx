@@ -27,7 +27,7 @@ const Home = () => {
                     </div>
                 </div>
                 <div className="right">
-                    <Image src={mh} width="500" height="500" objectFit='cover' alt='arnabs image'/>
+                    <Image src={mh} width="500" height="500" objectFit='cover' alt='arnabs image' className='img'/>
                 </div>
             </div>
         </>

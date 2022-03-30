@@ -62,6 +62,7 @@ $main-text-color: #333333;
     background-color: $bgcolor;
     color: $main-text-color;
     .container{
+        padding: 0rem 4rem;
         .left{
             h1{
                 font-size: 5rem;
@@ -400,6 +401,49 @@ $main-text-color: #333333;
             font-size: 2rem;
             text-align: center;
             padding: 1rem;
+        }
+    }
+}
+//?################################### Responsiveness #################################################
+@media(max-width:1150px){
+    #contact{
+        .container{
+            flex-direction: column;
+        }
+    }
+}
+@media(max-width:770px){
+    #contact{
+        .container{
+            flex-direction: column;
+            .right{
+                .form{
+                    input{
+                        width: 100% !important;
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width:900px){
+    #work{
+        .container{
+            .contentContainer{
+                flex-direction: column;
+            }
+        }
+    }
+    #home{
+        .container{
+            .left{
+                border: 1px solid red;
+            }
+            .right{
+                .img{
+                    display: none;
+                }
+            }
         }
     }
 }
