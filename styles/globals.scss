@@ -437,13 +437,33 @@ $main-text-color: #333333;
     #home{
         .container{
             .left{
-                border: 1px solid red;
             }
             .right{
+                display: none;
+                border: 1px solid red;
                 .img{
+                    display: none !important;
+                }
+                #img{
                     display: none;
                 }
             }
         }
+    }
+}
+@media(max-width:750px){
+    html{
+        font-size: 50%;
+    }
+    #navbar{
+        display: none;
+    }
+}
+@media(max-width:750px){
+    html{
+        font-size: 50%;
+    }
+    #navbar{
+        display: none;
     }
 }
