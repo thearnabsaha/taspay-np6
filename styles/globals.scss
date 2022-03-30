@@ -57,7 +57,7 @@ $main-text-color: #333333;
     padding-top: 8rem;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     height: 110vh;
     background-color: $bgcolor;
     color: $main-text-color;
@@ -83,7 +83,7 @@ $main-text-color: #333333;
             }
             form{
                 input{
-                    width: 400px;
+                    width: 40rem;
                     margin-top: 1.5rem;
                     height: 50px;
                     font-size: 1.5rem;
@@ -306,7 +306,7 @@ $main-text-color: #333333;
                 padding-bottom: 2rem;
             }
             p{
-                width: 50rem;
+                width: 50vw;
                 padding-bottom: 3rem;
                 color: $text-color;
                 font-size: 1.8rem;
@@ -434,36 +434,19 @@ $main-text-color: #333333;
             }
         }
     }
+}
+@media(max-width:750px){
+    html{
+        font-size: 50%;
+    }
+    #navbar{
+        display: none;
+    }
+}
+@media(max-width:400px){
     #home{
         .container{
-            .left{
-            }
-            .right{
-                display: none;
-                border: 1px solid red;
-                .img{
-                    display: none !important;
-                }
-                #img{
-                    display: none;
-                }
-            }
+            padding: 0;
         }
-    }
-}
-@media(max-width:750px){
-    html{
-        font-size: 50%;
-    }
-    #navbar{
-        display: none;
-    }
-}
-@media(max-width:750px){
-    html{
-        font-size: 50%;
-    }
-    #navbar{
-        display: none;
     }
 }
