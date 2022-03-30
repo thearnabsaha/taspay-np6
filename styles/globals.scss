@@ -306,7 +306,7 @@ $main-text-color: #333333;
                 padding-bottom: 2rem;
             }
             p{
-                width: 50vw;
+                width: 30vw;
                 padding-bottom: 3rem;
                 color: $text-color;
                 font-size: 1.8rem;
@@ -342,20 +342,10 @@ $main-text-color: #333333;
                             padding-left: .5rem;
                             margin-left: 1rem;
                         }
-                        .ck{
-                            color: red;
-                            display: inline;
-                            width: 20px;
-                            margin-top: 2rem;
-                        }
-                        label{
-                            padding: 0rem 2rem;
-                            display: inline-block;
-                            font-size: 1.7rem;
-                            color: $text-color;
-                            transform: translate(17px,-32px);
-                        }
+
                         button{
+                            margin-top: 3rem;
+                            margin-left: 1rem;
                             border: none;
                             outline: none;
                             background-color: $primary-color;
