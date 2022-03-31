@@ -7,18 +7,18 @@ const Contact = () => {
         lastName:"",
         phone:"",
         email:"",
-        address:"",
         message:"",
+        address:"",
 
     })
     const changeHandler =(e)=>{
-        setRecords({[e.target.name]:e.target.value});
+        setRecords({...records,[e.target.name]:e.target.value});
     }
     // connect with firebase
     const submitData=async(e)=>{
         e.preventDefault()
         const { firstName, lastName, phone, email,address, message } = records;
-        if( firstName && lastName && phone && email && address && message ){
+        if( message ){
             const res = fetch(
                 "https://taspay-np6-default-rtdb.firebaseio.com/taspayDatabase.json",
                 {
