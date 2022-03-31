@@ -20,4 +20,3 @@ export const works = [
 
     },
 ];
-// MdDownload , MdAttachMoney, MdOutlineScreenShare

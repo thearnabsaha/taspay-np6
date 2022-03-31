@@ -8,8 +8,6 @@ import { send } from "../api/send";
 import { recieve } from "../api/recieve";
 
 const TotalAbout = () => {
-    const [sendData, setSendData] = useState(send)
-    const [recieveData, setRecieveData] = useState(recieve)
     return (
         <>
             <About title="How to use the App?" uptitle="-- AVAILABLE @ GOOGLE AND IOS APP STORE ONLY" img={hero3} data={send}/>
