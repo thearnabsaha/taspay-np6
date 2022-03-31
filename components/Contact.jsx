@@ -31,8 +31,8 @@ const Contact = () => {
                                     <input type="text" placeholder='Last Name' name="lastName" value={records.lastName} onChange={changeHandler}/>
                                 </div>
                                 <div className="con">
-                                    <input type="tel" name="" id="" placeholder='Phone Number' name="phone" value={records.phone} onChange={changeHandler}/>
-                                    <input type="email" name="email" id="" placeholder='Email ID' name="" value={records.email} onChange={changeHandler}/>
+                                    <input type="tel" placeholder='Phone Number' name="phone" value={records.phone} onChange={changeHandler}/>
+                                    <input type="email" name="email" placeholder='Email ID' value={records.email} onChange={changeHandler}/>
                                 </div>
                                 <input type="text" placeholder='Add Address' name="address" value={records.address} onChange={changeHandler}/>
                                 <input type="text" placeholder='Enter the message' name="message" value={records.message} onChange={changeHandler}/>
