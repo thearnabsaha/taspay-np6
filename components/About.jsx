@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import styled from 'styled-components';
 const AboutContainer = styled.div`
-  flex-direction:${(props)=>(props.variant==="reverse"?"row":"row-reverse")};
+    flex-direction:${(props)=>(props.variant==="reverse"?"row":"row-reverse")};
 `;
 const About = (props) => {
     return (
