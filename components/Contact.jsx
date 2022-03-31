@@ -12,7 +12,7 @@ const Contact = () => {
 
     })
     const changeHandler =(e)=>{
-        setRecords(e.target.name=e.target.value);
+        setRecords({[e.target.name]:e.target.value});
     }
     return (
         <>
@@ -27,15 +27,15 @@ const Contact = () => {
                         <div className="form">
                             <form action="POST">
                                 <div className="name">
-                                    <input type="text" placeholder='First Name' value={records.firstName} onChange={changeHandler}/>
-                                    <input type="text" placeholder='Last Name' value={records.lastName} onChange={changeHandler}/>
+                                    <input type="text" placeholder='First Name' name="firstName" value={records.firstName} onChange={changeHandler}/>
+                                    <input type="text" placeholder='Last Name' name="lastName" value={records.lastName} onChange={changeHandler}/>
                                 </div>
                                 <div className="con">
-                                    <input type="tel" name="" id="" placeholder='Phone Number' value={records.phone} onChange={changeHandler}/>
-                                    <input type="email" name="" id="" placeholder='Email ID' value={records.email} onChange={changeHandler}/>
+                                    <input type="tel" name="" id="" placeholder='Phone Number' name="phone" value={records.phone} onChange={changeHandler}/>
+                                    <input type="email" name="email" id="" placeholder='Email ID' name="" value={records.email} onChange={changeHandler}/>
                                 </div>
-                                <input type="text" placeholder='Add Address' value={records.address} onChange={changeHandler}/>
-                                <input type="text" placeholder='Enter the message' value={records.message} onChange={changeHandler}/>
+                                <input type="text" placeholder='Add Address' name="address" value={records.address} onChange={changeHandler}/>
+                                <input type="text" placeholder='Enter the message' name="message" value={records.message} onChange={changeHandler}/>
                                 <button type='submit'>Submit</button>
                             </form>
                         </div>
