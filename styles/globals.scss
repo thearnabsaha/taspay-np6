@@ -415,12 +415,39 @@ $main-text-color: #333333;
             }
         }
     }
+    #home{
+        flex-direction: column;
+        .container{
+            .right{
+                display: none;
+            }
+        }
+    }
 }
 @media(max-width:900px){
     #work{
         .container{
             .contentContainer{
                 flex-direction: column;
+            }
+        }
+    }
+    #about{
+        .container{
+            flex-direction: column;
+            width: 100%;
+            .left{
+                padding: 4rem;
+                .contentContainer{
+                    .desc{
+                        p{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+            .right{
+                display: none;
             }
         }
     }
@@ -437,6 +464,32 @@ $main-text-color: #333333;
     #home{
         .container{
             padding: 0;
+        }
+    }
+    #contact{
+        .container{
+            .left{
+                p{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    #services{
+        .container{
+            .content{
+                width: 100%;
+            }
+        }
+    }
+    #works{
+        .container{
+            // width: 20%;
+            .contentContainer{
+                padding: 0;
+                .content{
+                }
+            }
         }
     }
 }
