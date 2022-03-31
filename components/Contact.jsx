@@ -2,9 +2,18 @@ import mh from '../public/images/hero1.jpg'
 import Image from 'next/image';
 import { useState } from 'react';
 const Contact = () => {
-    const [records, setrecords] = useState({
-        
+    const [records, setRecords] = useState({
+        firstName:"",
+        lastName:"",
+        phone:"",
+        email:"",
+        address:"",
+        message:"",
+
     })
+    const changeHandler =(e)=>{
+        setRecords(e.target.name=e.target.value);
+    }
     return (
         <>
             <div id="contact">
@@ -18,15 +27,15 @@ const Contact = () => {
                         <div className="form">
                             <form action="POST">
                                 <div className="name">
-                                    <input type="text" placeholder='First Name' value={records} onChange={changeHandler}/>
-                                    <input type="text" placeholder='Last Name' value={records} onChange={changeHandler}/>
+                                    <input type="text" placeholder='First Name' value={records.firstName} onChange={changeHandler}/>
+                                    <input type="text" placeholder='Last Name' value={records.lastName} onChange={changeHandler}/>
                                 </div>
                                 <div className="con">
-                                    <input type="tel" name="" id="" placeholder='Phone Number' value={records} onChange={changeHandler}/>
-                                    <input type="email" name="" id="" placeholder='Email ID' value={records} onChange={changeHandler}/>
+                                    <input type="tel" name="" id="" placeholder='Phone Number' value={records.phone} onChange={changeHandler}/>
+                                    <input type="email" name="" id="" placeholder='Email ID' value={records.email} onChange={changeHandler}/>
                                 </div>
-                                <input type="text" placeholder='Add Address' value={records} onChange={changeHandler}/>
-                                <input type="text" placeholder='Enter the message' value={records} onChange={changeHandler}/>
+                                <input type="text" placeholder='Add Address' value={records.address} onChange={changeHandler}/>
+                                <input type="text" placeholder='Enter the message' value={records.message} onChange={changeHandler}/>
                                 <button type='submit'>Submit</button>
                             </form>
                         </div>
