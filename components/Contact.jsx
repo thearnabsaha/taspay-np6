@@ -1,6 +1,10 @@
 import mh from '../public/images/hero1.jpg'
 import Image from 'next/image';
+import { useState } from 'react';
 const Contact = () => {
+    const [records, setrecords] = useState({
+        
+    })
     return (
         <>
             <div id="contact">
@@ -14,15 +18,15 @@ const Contact = () => {
                         <div className="form">
                             <form action="POST">
                                 <div className="name">
-                                    <input type="text" placeholder='First Name'/>
-                                    <input type="text" placeholder='Last Name'/>
+                                    <input type="text" placeholder='First Name' value={records} onChange={changeHandler}/>
+                                    <input type="text" placeholder='Last Name' value={records} onChange={changeHandler}/>
                                 </div>
                                 <div className="con">
-                                    <input type="tel" name="" id="" placeholder='Phone Number'/>
-                                    <input type="email" name="" id="" placeholder='Email ID'/>
+                                    <input type="tel" name="" id="" placeholder='Phone Number' value={records} onChange={changeHandler}/>
+                                    <input type="email" name="" id="" placeholder='Email ID' value={records} onChange={changeHandler}/>
                                 </div>
-                                <input type="text" placeholder='Add Address'/>
-                                <input type="text" placeholder='Enter the message'/>
+                                <input type="text" placeholder='Add Address' value={records} onChange={changeHandler}/>
+                                <input type="text" placeholder='Enter the message' value={records} onChange={changeHandler}/>
                                 <button type='submit'>Submit</button>
                             </form>
                         </div>
