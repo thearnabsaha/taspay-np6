@@ -1,6 +1,6 @@
 import mh from '../public/images/hero1.jpg'
 import Image from 'next/image';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 const Contact = () => {
     const [records, setRecords] = useState({
         firstName:"",
@@ -11,9 +11,52 @@ const Contact = () => {
         message:"",
 
     })
+    const { firstName, lastName, phone, email, address, message } = records;
     const changeHandler =(e)=>{
         setRecords({[e.target.name]:e.target.value});
     }
+    const submitData=async(e)=>{
+        e.preventDefault()
+        if( firstName && lastName && phone && email && address && message ){
+            const res = fetch(
+                "https://taspay-np6-default-rtdb.firebaseio.com/taspayDatabase.json",
+                {
+                    method: "POST",
+                    headers: {
+                    "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify({
+                        firstName,
+                        lastName,
+                        phone,
+                        email,
+                        address,
+                        message,
+                    }),
+                }
+            );
+            if (res) {
+                setRecords({
+                    firstName: "",
+                    lastName: "",
+                    phone: "",
+                    email: "",
+                    address: "",
+                    message: "",
+                });
+                alert("Data Stored");
+            }
+        }else{
+            alert("fill all the fields")
+        }
+    }
+    // useEffect(() => {
+    //     if(records.address&&records.email&&records.firstName&&records.lastName&&records.message&&records.phone){
+    //         console.log(records);
+    //     }else{
+    //         alert("fill all the fields")
+    //     }
+    // }, [])
     return (
         <>
             <div id="contact">
