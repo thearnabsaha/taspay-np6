@@ -1,6 +1,6 @@
 import mh from '../public/images/hero1.jpg'
 import Image from 'next/image';
-import { useState, useEffect } from 'react';
+import { useState} from 'react';
 const Contact = () => {
     const [records, setRecords] = useState({
         firstName:"",
@@ -11,12 +11,13 @@ const Contact = () => {
         message:"",
 
     })
-    const { firstName, lastName, phone, email, address, message } = records;
     const changeHandler =(e)=>{
         setRecords({[e.target.name]:e.target.value});
     }
+    // connect with firebase
     const submitData=async(e)=>{
         e.preventDefault()
+        const { firstName, lastName, phone, email,address, message } = records;
         if( firstName && lastName && phone && email && address && message ){
             const res = fetch(
                 "https://taspay-np6-default-rtdb.firebaseio.com/taspayDatabase.json",
@@ -45,18 +46,13 @@ const Contact = () => {
                     message: "",
                 });
                 alert("Data Stored");
-            }
+            } else {
+                alert("plz fill the data");
+                }
         }else{
             alert("fill all the fields")
         }
     }
-    // useEffect(() => {
-    //     if(records.address&&records.email&&records.firstName&&records.lastName&&records.message&&records.phone){
-    //         console.log(records);
-    //     }else{
-    //         alert("fill all the fields")
-    //     }
-    // }, [])
     return (
         <>
             <div id="contact">
@@ -79,7 +75,7 @@ const Contact = () => {
                                 </div>
                                 <input type="text" placeholder='Add Address' name="address" value={records.address} onChange={changeHandler}/>
                                 <input type="text" placeholder='Enter the message' name="message" value={records.message} onChange={changeHandler}/>
-                                <button type='submit'>Submit</button>
+                                <button type='submit' onClick={submitData}>Submit</button>
                             </form>
                         </div>
                     </div>
